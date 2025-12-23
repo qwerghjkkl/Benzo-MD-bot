@@ -219,6 +219,7 @@ Subscribe: @120363406476499117
 • .tiktok <link>
 • .video <youtube>
 • .ytmp4 <Link>
+• .apk <query>
 
 🎨 *MISC*
 • .heart
