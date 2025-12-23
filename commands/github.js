@@ -5,7 +5,7 @@ const path = require('path');
 
 async function githubCommand(sock, chatId, message) {
   try {
-    const res = await fetch('https://api.github.com/repos/spark-x1/Benzo-MD');
+    const res = await fetch('https://api.github.com/repos/MrKing254/Benzo-MD');
     if (!res.ok) throw new Error('Error fetching repository data');
     const json = await res.json();
 
