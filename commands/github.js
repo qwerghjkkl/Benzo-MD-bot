@@ -10,16 +10,16 @@ async function githubCommand(sock, chatId, message) {
     const json = await res.json();
 
     let txt = `*🔥 BENZO-MD REPOSITORY 🔥*\n`;
-    txt += `━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+    txt += `━━━━━━━━━━━━━━━━━━━━━\n\n`;
     txt += `📦 *Repository:* ${json.name}\n`;
-    txt += `━━━━━━━━━━━━━━━━━━━━━━━\n`;
+    txt += `━━━━━━━━━━━━━━━━━━━━━\n`;
     txt += `👁️ *Watchers:* ${json.watchers_count}\n`;
     txt += `📊 *Size:* ${(json.size / 1024).toFixed(2)} MB\n`;
     txt += `🕐 *Updated:* ${moment(json.updated_at).format('DD/MM/YY - HH:mm:ss')}\n`;
     txt += `🔗 *URL:* ${json.html_url}\n`;
     txt += `🍴 *Forks:* ${json.forks_count}\n`;
     txt += `⭐ *Stars:* ${json.stargazers_count}\n\n`;
-    txt += `━━━━━━━━━━━━━━━━━━━━━━━\n`;
+    txt += `━━━━━━━━━━━━━━━━━━━━━\n`;
     txt += `🚀 *POWERED BY BENZO-MD BOT*`;
 
     // Use the local asset image
